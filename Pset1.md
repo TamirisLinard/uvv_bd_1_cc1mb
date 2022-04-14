@@ -1,4 +1,8 @@
-# Pset
+# Pset 1 de Banco de Dados
 
-*Tamiiris Linard Souza*
+### *Tamiris Linard*
+
+
+
+
 
