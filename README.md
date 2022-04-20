@@ -5,4 +5,4 @@
 ### 🔸 Aluna: Tamiris Linard Souza
 ### 🔸 Turma: CC1MB
 ### 🔸 Professor: Abrantes Araújo Silva Filho
-### 🔸 Monitora: Suelem 
+### 🔸 Monitora: Suellen Miranda Amorim
