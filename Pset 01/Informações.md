@@ -180,7 +180,12 @@ ON UPDATE NO ACTION;
 
 
 ### 🔸 Script MariaDB
-
+- Da linha 1 à 7 do github deve ser usado pelo terminal, logando na conta do root para criar o usuário tamiris.
+- Na linha 9 você entra no meu usuário para criar o banco de dados uvv, onde será criado as tabelas do projeto lógico, junto com as chaves primárias e as unique keys, e juntamente com os comentários de cada tabela que estão inseridas da linha 14 até a linha 102.
+- Os comentários de cada coluna estão escritos da linha 104 até a linha 160.
+- Da linha 136 até a linha 230 estão os dados sobre cada tabela que deveriam ser inseridos. 
+- As foreign keys necessárias foram criadas da linha 232 até a linha 280. 
+- Após isso estão as restrições do sexo, salário e horas necessárias da linha 281 até 284.
 
 
 ### 🔸 Script PostgreSQL
