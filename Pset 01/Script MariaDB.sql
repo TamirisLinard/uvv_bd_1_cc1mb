@@ -230,8 +230,6 @@ INSERT INTO trabalha_em (cpf_funcionario,numero_projeto,horas) VALUES (
 '88866555576','20','0');
 
 ALTER TABLE trabalha_em ADD CONSTRAINT funcionario_trabalha_em_fk
-
-
  FOREIGN KEY (cpf_funcionario)
  REFERENCES funcionario (cpf)
 
