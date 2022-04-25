@@ -1,4 +1,4 @@
-### 🔸 SQL Power Architect
+### 🔸 **SQL Power Architect**
 
 - No SQL Power Architect foi criado  tabela com as foreign, primary, unique keys e os comentários de cada coluna e as tabelas. 
 - Salvei o arquivo do SQL Power architect com o formato .architect.
@@ -179,7 +179,7 @@ ON UPDATE NO ACTION;
 
 
 
-### 🔸 Script MariaDB
+### 🔸 **Script MariaDB**
 - Da linha 1 à 7 do github deve ser usado pelo terminal, logando na conta do root para criar o usuário tamiris.
 - Na linha 9 você entra no meu usuário para criar o banco de dados uvv, onde será criado as tabelas do projeto lógico, junto com as chaves primárias e as unique keys, e juntamente com os comentários de cada tabela que estão inseridas da linha 14 até a linha 102.
 - Os comentários de cada coluna estão escritos da linha 104 até a linha 160.
@@ -188,7 +188,7 @@ ON UPDATE NO ACTION;
 - Após isso estão as restrições do sexo, salário e horas necessárias da linha 281 até 284.
 
 
-### 🔸 Script PostgreSQL
+### 🔸 **Script PostgreSQL**
 - Primeiro foi criado no root o usuário tamiris.
 - Depois que o meu usuário foi criado cadastrei ele no terminal do postgres e criei o banco de dados uvv.
 - Logo após foi criado o esquema Elmasri e dado a permissão para o meu usuário criar e modificar as tabelas criadas pelo esquema.
