@@ -184,3 +184,8 @@ ON UPDATE NO ACTION;
 
 
 ### 🔸 Script PostgreSQL
+- Primeiro foi criado no root o usuário tamiris.
+- Depois que o meu usuário foi criado cadastrei ele no terminal do postgres e criei o banco de dados uvv.
+- Logo após foi criado o esquema Elmasri e dado a permissão para o meu usuário criar e modificar as tabelas criadas pelo esquema.
+- Depois as tabelas foram criadas uma por um com suas chaves primarias, dados inseridos e comentários de cada linha e coluna com algumas unique keys necessárias. E logo após isso estão as restrições do sexo, salário e horas necessárias.
+
