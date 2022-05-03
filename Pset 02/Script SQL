@@ -1,1 +1,21 @@
+use uvv;
 
+-- Questão 1- O comando a baixo seleciona a média dos salários respectivamente dos departamentos 1, 4 e 5.
+
+select numero_departamento, avg(salario) as media_salario_dep
+from funcionario
+where numero_departamento=1 or numero_departamento=4 or numero_departamento=5
+group by numero_departamento;
+
+
+-- Questão 2- Os comandos a baixo selecionam as médias dos salarios respectivamente de homens e de mulheres.
+
+select avg(salario) as media_salario_M, sexo
+from funcionario 
+where sexo='M'
+union
+select avg(salario) as media_salario_F, sexo
+from funcionario 
+where sexo='F';
+
+-- Questão 3-
