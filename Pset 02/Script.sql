@@ -144,3 +144,24 @@ on dpt.numero_departamento = p.numero_departamento
 inner join trabalha_em t
 on p.numero_projeto = t.numero_projeto
 where t.horas = 0;
+
+-- Questão 13
+
+select concat(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) "Nome Completo",
+case
+when f.sexo = "M" then "Masculino"
+when f.sexo = "F" then "Feminino"
+end Sexo,
+timestampdiff(year, f.data_nascimento, curdate()) Idade
+from funcionario f
+union
+select concat(d.nome_dependente, ' ', f.nome_meio, ' ', f.ultimo_nome) "Nome Completo",
+case
+when d.sexo = "M" then "Masculino"
+when d.sexo = "F" then "Feminino"
+end Sexo,
+timestampdiff(year, d.data_nascimento, curdate()) Idade
+from dependente d 
+inner join funcionario f
+on d.cpf_funcionario = f.cpf
+order by idade desc;
