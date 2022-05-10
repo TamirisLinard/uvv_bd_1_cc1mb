@@ -101,7 +101,7 @@ on t.cpf_funcionario = f.cpf
 inner join departamento dpt
 on f.numero_departamento = dpt.numero_departamento
 inner join projeto p
-on dpt.numero_departamento = p.numero_departamento
+on t.numero_projeto = p.numero_projeto
 group by p.nome_projeto;
 
 
