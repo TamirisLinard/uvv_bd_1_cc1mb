@@ -165,3 +165,24 @@ from dependente d
 inner join funcionario f
 on d.cpf_funcionario = f.cpf
 order by idade desc;
+
+-- Questão 14
+
+select dpt.nome_departamento Departamento, count(f.numero_departamento) "Qtde. de Funcionários"
+from funcionario f
+inner join departamento dpt
+on f.numero_departamento = dpt.numero_departamento
+group by dpt.nome_departamento;
+
+-- Questão 15
+
+select distinct concat(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) "Nome Completo",
+dpt.nome_departamento Departamento, p.nome_projeto Projeto
+from departamento dpt 
+inner join projeto p 
+inner join trabalha_em t 
+inner join funcionario f 
+where dpt.numero_departamento = f.numero_departamento 
+and p.numero_projeto = t.numero_projeto 
+and t.cpf_funcionario = f.cpf
+order by p.nome_projeto desc;
