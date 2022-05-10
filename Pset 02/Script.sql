@@ -148,7 +148,7 @@ where t.horas = 0;
 -- Questão 13
 
 select concat(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) "Nome Completo",
-case
+case 
 when f.sexo = "M" then "Masculino"
 when f.sexo = "F" then "Feminino"
 end Sexo,
