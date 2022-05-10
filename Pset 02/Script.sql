@@ -1,4 +1,5 @@
 -- Questão 1
+
 select avg(f.salario) as media_salarial, d.nome_departamento
 from funcionario f
 inner join departamento d
@@ -6,12 +7,14 @@ on d.numero_departamento = f.numero_departamento
 group by d.nome_departamento;
 
 -- Questão 2
+
 select avg(f.salario) as media_salarial, f.sexo
 from funcionario f
 group by f.sexo;
 
 
 -- Questão 3
+
 select d.nome_departamento,
 concat(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) as nome_funcionario,
 f.data_nascimento,
@@ -22,6 +25,7 @@ inner join funcionario f
 on f.numero_departamento = d.numero_departamento;
 
 -- Questão 4
+
 select concat(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) as nome_funcionario,
 f.data_nascimento,
 timestampdiff (year, data_nascimento, curdate()) as idade,
@@ -37,6 +41,7 @@ end) as salario_ajustado
 from funcionario f;
 
 -- Questão 5
+
 with gerente as (
 select concat(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) as nome,
 f.cpf
@@ -127,3 +132,15 @@ inner join projeto p
 on t.numero_projeto = p.numero_projeto
 order by t.horas desc;
 
+-- Questão 12
+
+select dpt.nome_departamento Departamento, p.nome_projeto Projeto,
+f.primeiro_nome Funcionário, concat(t.horas, "h") "Horas de Trabalho"
+from funcionario f 
+inner join departamento dpt
+on f.numero_departamento = dpt.numero_departamento
+inner join projeto p
+on dpt.numero_departamento = p.numero_departamento
+inner join trabalha_em t
+on p.numero_projeto = t.numero_projeto
+where t.horas = 0;
