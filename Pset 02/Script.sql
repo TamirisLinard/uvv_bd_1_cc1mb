@@ -99,16 +99,11 @@ order by p.numero_projeto;
 
 -- Questão 9
 
-select dpt.nome_departamento Departamento, p.nome_projeto Projeto, sum(distinct(t.horas)) "Tempo Total"
-from trabalha_em t
-inner join funcionario f
-on t.cpf_funcionario = f.cpf
-inner join departamento dpt
-on f.numero_departamento = dpt.numero_departamento
-inner join projeto p
-on t.numero_projeto = p.numero_projeto
-group by p.nome_projeto;
-
+SELECT p.nome_projeto , d.nome_departamento , SUM(t.horas) AS horas_trabalhadas
+ FROM trabalha_em AS t
+ INNER JOIN projeto AS p ON p.numero_projeto = t.numero_projeto 
+ INNER JOIN departamento AS d ON p.numero_departamento = d.numero_departamento
+ GROUP BY t.numero_projeto, p.nome_projeto , d.nome_departamento;
 
 -- Questão 10
 
