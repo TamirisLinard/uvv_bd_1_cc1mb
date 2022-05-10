@@ -104,7 +104,27 @@ inner join projeto p
 on t.numero_projeto = p.numero_projeto
 group by p.nome_projeto;
 
+-- 10ª Questão
 
+selecione  avg ( f . salario ) como media_salarial, d . nome_departamento
+do funcionario f
+interior juntar departamento d
+em  d . numero_departamento  =  f . numero_departamento
+grupo por  d . nome_departamento ;
+
+-- 11ª Questão
+
+select concat( f . primeiro_nome , '  ' , f . nome_meio , '  ' , f . ultimo_nome ) Funcionário, p . nome_projeto Projeto,
+caso
+quando t . horas  >  0 então concat( " R $ " , '  ' , t .horas  * 50 ) 
+senão " R$ 0,0 "
+fim de " Total Recebido "
+do funcionario f
+junção interna trabalha_em t
+em  f . cpf  =  t . cpf_funcionario
+projeto interno p
+em  t . numero_projeto  =  p . numero_projeto
+ordem por  t . horas  desc ;
 
 
 
