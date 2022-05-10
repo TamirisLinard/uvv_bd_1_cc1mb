@@ -6,3 +6,4 @@
 -  **Turma:** CC1mb
 
 
+### O Pset 2 foi passado pelo professor para testarmos nosso conhecimento sobre Álgrebra Relacional com o uso de comandos SQL
