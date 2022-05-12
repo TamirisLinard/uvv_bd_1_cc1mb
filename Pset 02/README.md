@@ -10,5 +10,5 @@
 - É uma continuação do Pset 1,
 - O pset 2 é para testarmos nosso conhecimento sobre Álgrebra Relacional com o uso de comandos SQL,
 - Contêm vários relatórios escrito no formato SQL pelo SGBD MariaDB,
-- Os scrips estão no subrepositório chamado "Script.sql",
+- Os scrips estão no subrepositório chamado "Script.sql".
  
